@@ -1,6 +1,6 @@
 import './Hero.css';
 import arrow from '../../assets/arrow.png';
-import play from '../../assets/play.png';
+import play from '../../assets/play.png'; // Changed from .jpg to .png for consistency
 import pause from '../../assets/pause.png';
 
 const Hero = ({ heroData, setHeroCount, heroCount, setPlayStatus, playStatus }) => {
@@ -32,6 +32,8 @@ const Hero = ({ heroData, setHeroCount, heroCount, setPlayStatus, playStatus }) 
             className="hero-play-icon"
           />
           <p>See the video</p>
+          <br />
+          <p className='copywrite'>@spiritofhimalaya.com</p>
         </div>
       </div>
     </div>

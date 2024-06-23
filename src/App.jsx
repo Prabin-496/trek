@@ -2,6 +2,7 @@ import {useEffect, useState} from "react"
 import Background from './Components/Background/background'
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
+import TrekkingPackage from "./Components/package/TrekkingPackage";
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
         setHeroCount={setHeroCount}
         playStatus={playStatus}
       />
+      <TrekkingPackage/>
     </div>
   )
 }
