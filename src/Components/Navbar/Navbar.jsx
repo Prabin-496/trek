@@ -3,7 +3,7 @@ import './Navbar.css'
 export const Navbar = () => {
   return (
     <div className='nav'>
-    <div className="nav-logo">Spirit of Himalaya</div>
+    <div className="nav-logo">Himalayan Spirit</div>
       <ul className='nav-menu'>
         <li>Home</li>
         <li>Explore</li>

@@ -8,6 +8,7 @@ import him from '../../assets/him.jpg';
 import mmm from '../../assets/mmm.jpg';
 import rular from '../../assets/rular.jpg';
 import '../package/TrekkingPackage.css';
+import ann from '../../assets/ann.jpeg'
 
 const TrekkingPackage = () => {
   const [packages, setPackages] = useState([]);
@@ -24,7 +25,7 @@ const TrekkingPackage = () => {
       },
       {
         id: 2,
-        imageUrl: mmm,
+        imageUrl: ann,
         packageName: 'Annapurna Circuit',
         duration: 21,
         difficulty: 'Challenging',
