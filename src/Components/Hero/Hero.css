@@ -1,73 +1,119 @@
 .hero {
     margin: 0px 120px;
     margin-top: 270px;
-}
-
-.hero-text {
+    text-align: center;/* Center align text and other content */
+    
+  } 
+  
+  .hero-text {
     color: #FFF;
     font-size: 110px;
-    font-weight: 500;
-    line-height: 130px;
-}
-
-.hero-explore {
+    font-weight: 400;
+    line-height: 100px;
+  }
+  
+  .hero-explore {
     display: flex;
     align-items: center;
     gap: 20px;
     width: fit-content;
-    margin-top: 70px;
+    margin: 70px auto 0; /* Center align the button */
     padding: 10px 20px;
     border-radius: 60px;
     background-color: white;
     cursor: pointer;
-}
-
-.hero-explore img {
+  }
+  
+  .hero-explore img {
     width: 20px;
     height: auto;
-}
-
-.hero-dot-play {
+  }
+  
+  .hero-dot-play {
     margin-top: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.hero-dots {
+  }
+  
+  .hero-dots {
     display: flex;
     align-items: center;
     gap: 23px;
     list-style: none;
     padding: 0;
-}
-
-.hero-dot {
+  }
+  
+  .hero-dot {
     width: 15px;
     height: 15px;
     background: #FFF;
     border-radius: 50%;
     cursor: pointer;
-}
-
-.hero-dot.orange {
+  }
+  
+  .hero-dot.orange {
     background: orangered;
-}
-
-.hero-play {
+  }
+  
+  .hero-play {
     display: flex;
     align-items: center;
     gap: 15px;
-}
-
-.hero-play img {
+  }
+  
+  .hero-play img {
     width: 35px;
     height: auto;
     cursor: pointer;
-}
-
-.hero-play p {
+  }
+  
+  .hero-play p {
     color: #FFF;
     font-size: 19px;
     margin: 0;
-}
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .hero {
+      margin: 0 20px;
+      margin-top: 100px;
+    }
+  
+    .hero-text {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  
+    .hero-explore {
+      margin-top: 30px;
+      padding: 8px 16px;
+      border-radius: 40px;
+    }
+  
+    .hero-dot-play {
+      margin-top: 60px;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center;
+    }
+  
+    .hero-dots {
+      gap: 15px;
+      margin-bottom: 20px; /* Add some space between dots and play button */
+    }
+  
+    .hero-dot {
+      width: 10px;
+      height: 10px;
+    }
+  
+    .hero-play img {
+      width: 25px;
+    }
+  
+    .hero-play p {
+      font-size: 16px;
+    }
+  }
+  
