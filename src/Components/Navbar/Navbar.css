@@ -1,55 +1,80 @@
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    color: white;
-    position: relative;
-  }
-  
-  .nav-logo {
-    font-family: Outfit, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+.nav-logo {
+  font-family: Outfit, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 16px;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a:active,
+.nav-menu a:focus,
+.nav-menu a:visited {
+  color: white; /* Ensures link color remains white in all states */
+}
+
+.nav-contact {
+  border-radius: 50px;
+  padding: 8px 20px;
+  background: #fff;
+  color: #262626;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-contact a {
+  color: #262626; /* Ensures link color in contact button remains consistent */
+}
+
+.nav-contact a:hover,
+.nav-contact a:active,
+.nav-contact a:focus,
+.nav-contact a:visited {
+  color: #262626; /* Ensures link color remains consistent in all states */
+}
+
+@media (max-width: 768px) {
   .nav-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  
-  .nav-toggle span {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin-bottom: 5px;
-    transition: all 0.3s ease;
-  }
-  
-  .nav-menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-size: 16px;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-contact {
-    border-radius: 50px;
-    padding: 8px 20px;
-    background: #fff;
-    color: #262626;
-  }
-  
-  @media (max-width: 768px) {
-    .nav-toggle {
       display: flex;
-    }
-  
-    .nav-menu {
+  }
+
+  .nav-menu {
       position: absolute;
       top: 100%;
       left: 0;
@@ -59,32 +84,32 @@
       padding: 20px;
       gap: 15px;
       display: none;
-    }
-  
-    .nav-menu.open {
-      display: flex;
-    }
-  
-    .nav-contact {
-      margin-top: 10px;
-    }
   }
-  
-  @media (min-width: 769px) {
-    .nav {
+
+  .nav-menu.open {
+      display: flex;
+  }
+
+  .nav-contact {
+      margin-top: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav {
       margin: 40px 120px;
-    }
-  
-    .nav-logo {
+  }
+
+  .nav-logo {
       font-size: 42px;
-    }
-  
-    .nav-menu {
+  }
+
+  .nav-menu {
       font-size: 18px;
       gap: 90px;
-    }
-  
-    .nav-contact {
-      padding: 10px 38px;
-    }
   }
+
+  .nav-contact {
+      padding: 10px 38px;
+  }
+}
