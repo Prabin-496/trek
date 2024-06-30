@@ -8,6 +8,7 @@ import Package from "../src/pages/Package";
 import Contact from "../src/pages/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import About from "../src/pages/About";
 
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/Package" element={<Package />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Home" element={<Home />} />
+        <Route path="/About" element={<About />} />
       </Routes>
       
       <Hero

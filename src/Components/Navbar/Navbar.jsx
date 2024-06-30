@@ -20,7 +20,9 @@ export const Navbar = () => {
         <li>
           <Link to="/Package">Package</Link>
         </li>
-        <li>About</li>
+        <li>
+        <Link to="/About">About</Link>
+        </li>
         <li className='nav-contact'>
         <Link to="/Contact">Contact</Link>
         </li>

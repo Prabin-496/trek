@@ -7,7 +7,7 @@ import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
 import him from '../../assets/him.jpg';
 import mmm from '../../assets/mmm.jpg';
-import rular from '../../assets/rular.jpg';
+import langtang from '../../assets/langtang.jpg';
 import ann from '../../assets/ann.jpeg';
 import '../package/TrekkingPackage.css';
 
@@ -40,7 +40,7 @@ const TrekkingPackage = () => {
       },
       {
         id: 3,
-        imageUrl: rular,
+        imageUrl: langtang,
         packageName: 'Langtang Valley Trek',
         duration: 10,
         difficulty: 'Moderate',

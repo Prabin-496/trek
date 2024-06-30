@@ -11,6 +11,19 @@
     font-weight: 400;
     line-height: 100px;
   }
+  .hero-explore-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .hero-explore-link:hover,
+  .hero-explore-link:focus {
+    text-decoration: none;
+    color: inherit;
+  }
   
   .hero-explore {
     display: flex;
