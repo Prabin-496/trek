@@ -1,10 +1,16 @@
 import React from 'react';
 import '../pages/pagesCss/Package.css';
+import manaslu from '../assets/manaslu-1-1-1.jpg';
+import everest from '../assets/Everest.jpeg';
+import Annapurna from '../assets/ann.jpeg';
+import langtang from '../assets/langtang.jpg';
+import uppermustang from '../assets/uppermustang.jpg';
+import GokyoLake from '../assets/GokyoLake.jpeg';
 
 const packages = [
   {
     id: 1,
-    imageUrl: 'path_to_image1',
+    imageUrl: everest,
     packageName: 'Everest Base Camp Trek',
     duration: 14,
     difficulty: 'Challenging',
@@ -15,7 +21,7 @@ const packages = [
   },
   {
     id: 2,
-    imageUrl: 'path_to_image2',
+    imageUrl: Annapurna,
     packageName: 'Annapurna Circuit',
     duration: 21,
     difficulty: 'Strenuous',
@@ -26,7 +32,7 @@ const packages = [
   },
   {
     id: 3,
-    imageUrl: 'path_to_image3',
+    imageUrl: langtang,
     packageName: 'Langtang Valley Trek',
     duration: 10,
     difficulty: 'Moderate',
@@ -37,7 +43,7 @@ const packages = [
   },
   {
     id: 4,
-    imageUrl: 'path_to_image4',
+    imageUrl: manaslu,
     packageName: 'Manaslu Circuit Trek',
     duration: 16,
     difficulty: 'Challenging',
@@ -48,7 +54,7 @@ const packages = [
   },
   {
     id: 5,
-    imageUrl: 'path_to_image5',
+    imageUrl: uppermustang,
     packageName: 'Upper Mustang Trek',
     duration: 14,
     difficulty: 'Moderate',
@@ -59,7 +65,7 @@ const packages = [
   },
   {
     id: 6,
-    imageUrl: 'path_to_image6',
+    imageUrl: GokyoLake,
     packageName: 'Gokyo Lakes Trek',
     duration: 12,
     difficulty: 'Challenging',
